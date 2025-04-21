@@ -1,0 +1,15 @@
+<div *ngIf="weatherData" class="weather-card">
+    <div class="content">
+        <div class="location">
+            <span class="material-symbols-outlined">house</span>
+            <h3>{{ weatherData.name }}</h3>
+        </div>
+        <p>{{ weatherData.weather[0].description | titlecase }}</p>
+        <p>Temp: {{ weatherData.main.temp }} °C</p>
+        <p>Max Temp: {{ weatherData.main.temp_max }} °C</p>
+        <p>Min Temp: {{ weatherData.main.temp_min }} °C</p>
+        <p>Humidity: {{ weatherData.main.humidity }}%</p>
+        <p>Wind: {{ weatherData.wind.speed }} m/s</p>
+    </div>
+  </div>
+  

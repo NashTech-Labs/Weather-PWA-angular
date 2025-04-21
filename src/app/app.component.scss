@@ -1,0 +1,13 @@
+.container{
+    margin:40px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
